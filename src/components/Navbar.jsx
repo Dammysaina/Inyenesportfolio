@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import {
   FaBars,
   FaTimes,
-  FaGithub,
-  FaLinkedin,
+  // FaGithub,
+  // FaLinkedin,
 } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+// import { HiOutlineMail } from "react-icons/hi";
+// import { BsFillPersonLinesFill } from "react-icons/bs";
 import Logo from "../assets/images/dalogo.png";
 import { Link } from "react-scroll";
 import { HiArrowNarrowRight } from "react-icons/hi";
@@ -17,6 +17,9 @@ const Navbar = () => {
   const handleClick = () => setNav(!Nav);
   return (
     <div className="fixed w-full h-[80px] border-green-500 p-10 flex justify-between items-center bg-[#000000] text-gray-300 animate-fade-in transition-all duration-300 z-50 ">
+      <div>
+
+      </div>
       <div>
         <Link to="home" smooth={true} duration={500}>
           <img src={Logo} alt="Logoimage" style={{ width: "40px" }} className="cursor-pointer" />
@@ -105,7 +108,7 @@ const Navbar = () => {
         </li>
       </ul>
       {/*Social Menu */}
-      <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
+      {/* <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500">
             <a
@@ -140,7 +143,7 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };
