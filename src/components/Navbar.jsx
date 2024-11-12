@@ -11,63 +11,55 @@ import Logo from "../assets/images/dalogo.png";
 import { Link } from "react-scroll";
 import { HiArrowNarrowRight } from "react-icons/hi";
 
-
 const Navbar = () => {
   const [Nav, setNav] = useState(false);
   const handleClick = () => setNav(!Nav);
   return (
-    <div className="fixed w-full h-[80px] border-green-500 p-10 flex justify-between items-center bg-[#000000] text-gray-300 animate-fade-in transition-all duration-300 z-50 ">
-      <div>
-
+    <div className="fixed w-full h-[80px] bg-[#000000] text-gray-300 animate-fade-in transition-all duration-300 z-50 ">
+      <div className="p-5 bg-black">
+        {/* <div> */}
+          <div className="flex items-center justify-between h-16 border px-5">
+            <Link to="home" smooth={true} duration={500}>
+              <img
+                src={Logo}
+                alt="Logoimage"
+                style={{ width: "40px" }}
+                className="cursor-pointer"
+              />
+            </Link>
+            {/* menu*/}
+            <div className="flex items-center gap-4">
+              <ul className="hidden md:flex">
+                <li>
+                  <Link to="about" smooth={true} duration={500}>
+                    About
+                  </Link>{" "}
+                </li>
+                <li>
+                  <Link to="work" smooth={true} duration={500}>
+                    Projects
+                  </Link>{" "}
+                </li>
+                <li>
+                  <Link to="contact" smooth={true} duration={500}>
+                    Contact
+                  </Link>{" "}
+                </li>
+              </ul>
+              <div>
+                <Link to="work">
+                  <button className="group bg-orange-600 text-black px-6 py-3 my-2 flex items-center hover:bg-pink-600 ">
+                    Résumé
+                    <span className="group-hover:rotate-90 duration-300">
+                      <HiArrowNarrowRight className="ml-3" />
+                    </span>
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        {/* </div> */}
       </div>
-      <div>
-        <Link to="home" smooth={true} duration={500}>
-          <img src={Logo} alt="Logoimage" style={{ width: "40px" }} className="cursor-pointer" />
-        </Link>
-      </div>
-
-      {/* menu*/}
-      <div className="flex items-center">
-        <ul className="hidden md:flex">
-          {/* <li>
-          <Link to="home" smooth={true} duration={500}>
-            Home
-          </Link>
-        </li> */}
-          <li>
-            <Link to="about" smooth={true} duration={500}>
-              About
-            </Link>{" "}
-          </li>
-          {/* <li>
-          <Link to="skills" smooth={true} duration={500}>
-            Skills
-          </Link>{" "}
-        </li> */}
-          <li>
-            <Link to="work" smooth={true} duration={500}>
-              Projects
-            </Link>{" "}
-          </li>
-          <li>
-            <Link to="contact" smooth={true} duration={500}>
-              Contact
-            </Link>{" "}
-          </li>
-        </ul>
-        <div>
-          <Link to="work">
-            <button className="group bg-orange-600 text-black px-6 py-3 my-2 flex items-center hover:bg-pink-600 ">
-              Résumé
-              <span className="group-hover:rotate-90 duration-300">
-                <HiArrowNarrowRight className="ml-3" />
-              </span>
-            </button>
-          </Link>
-
-        </div>
-      </div>
-
 
       {/* Hamburger */}
       <div onClick={handleClick} className="md:hidden z-10">
