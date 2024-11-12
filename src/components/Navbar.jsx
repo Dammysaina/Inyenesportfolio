@@ -16,10 +16,10 @@ const Navbar = () => {
   const [Nav, setNav] = useState(false);
   const handleClick = () => setNav(!Nav);
   return (
-    <div className="fixed w-full h-[80px] border-green-500 p-4 flex justify-between items-center bg-[#000000] text-gray-300 ">
+    <div className="fixed w-full h-[80px] border-green-500 p-10 flex justify-between items-center bg-[#000000] text-gray-300 animate-fade-in transition-all duration-300 z-50 ">
       <div>
         <Link to="home" smooth={true} duration={500}>
-          <img src={Logo} alt="Logoimage" style={{ width: "90px" }} className="cursor-pointer" />
+          <img src={Logo} alt="Logoimage" style={{ width: "40px" }} className="cursor-pointer" />
         </Link>
       </div>
 
