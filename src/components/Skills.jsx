@@ -62,7 +62,7 @@ const Skills = () => {
         </div>
         
       </div>
-      <div className=" mx-auto flex flex-col w-full h-full ">
+      <div className=" mx-auto flex flex-col w-full ">
         <div>
           <p className=" font-bold inline  text-xl">
             Tools

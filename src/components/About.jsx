@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section
       name="about"
-      className="w-full h-screen bg-[#000000] text-gray-300 container animate-fade-in px-5"
+      className="w-full  bg-[#000000] text-gray-300 container animate-fade-in px-5"
     >
       <div className="px-5 py-5 md:p-16 border border-[#1a1a1a] p-5">
         <div className=" flex flex-col md:flex-row justify-between gap-5 md:gap-4 pb-8 mb-8 border-b border-[#1a1a1a] w-full  ">
@@ -29,12 +29,6 @@ const About = () => {
         </div>
         <div className="flex flex-col gap-8">
           <Skills/>
-          {/* <div>
-            <h3 className=" font-bold inline  text-xl"> 
-            Technologies
-          </h3>
-          </div> */}
-
         </div>
       </div>
     </section>

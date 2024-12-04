@@ -9,12 +9,16 @@ import Gofundme from "../assets/images/gofundme.png"
 const Work = () => {
   return (
     <div name="work" className="w-full md:h-screen text-gray-300 bg-[#000000] mt-0">
-      <div className="max-w-[1000px] mx-auto pb-0 p-4 flex flex-col justify-center w-full h-full">
+      <div className=" mx-auto pb-0 p-5 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 text-gray-300 ">
+          <p className="text-4xl font-bold inline text-gray-300 text-zinc-90 relative sm:text-4xl mt-3 whitespace-nowrap z-10">
             Projects
+            <span className="absolute text-4xl sm:text-5xl font-bold left-0 -top-4 sm:-top-6 bg-clip-text text-transparent bg-gradient-to-b from-zinc-800 -z-10 md:left-1/2 md:-translate-x-1/2">
+              {" "}
+              projects
+            </span>
           </p>
-          <p className="py-6">These are some of the projects I've worked on.</p>
+          <p className="py-6 text-gray-500">These are some of the projects I've worked on.</p>
         </div>
 
         {/*Container*/}
