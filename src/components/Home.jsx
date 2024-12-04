@@ -3,9 +3,9 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div name="home" className=" w-full h-screen bg-[#000000] pb-0" >
+    <div name="home" className=" w-full h-screen bg-[#000000] md:min-h-[60vh] pt-40" >
       {/*Container*/}
-      <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
+      <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center items-center h-full">
         <h1 className="text-4xl sm:text-7xl font-bold text-[#ffffff]">
           Inyene Etoedia
         </h1>
@@ -19,7 +19,11 @@ const Home = () => {
           delivering world-class projects for a maximum and optimised online
           presence high-quality projects.
         </p>
-        
+      </div>
+      <div className="flex gap-4 mt-5 md:mt-8">
+        <a></a>
+        <a></a>
+        <a></a>
       </div>
     </div>
   );

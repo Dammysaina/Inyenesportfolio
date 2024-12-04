@@ -15,10 +15,10 @@ const Navbar = () => {
   const [Nav, setNav] = useState(false);
   const handleClick = () => setNav(!Nav);
   return (
-    <div className="fixed w-full h-[80px] bg-[#000000] text-gray-300 animate-fade-in transition-all duration-300 z-50 ">
-      <div className="p-5 bg-black">
+    <div className="fixed w-full bg-[#000000] text-gray-300 animate-fade-in transition-all duration-300 z-50 ">
+      <div className=" bg-black relative top-[20px] px-5">
         {/* <div> */}
-          <div className="flex items-center justify-between h-16 border px-5">
+          <div className="flex items-center justify-between h-16 border border-[#1a1a1a] px-5">
             <Link to="home" smooth={true} duration={500}>
               <img
                 src={Logo}
@@ -46,15 +46,15 @@ const Navbar = () => {
                   </Link>{" "}
                 </li>
               </ul>
-              <div>
-                <Link to="work">
-                  <button className="group bg-orange-600 text-black px-6 py-3 my-2 flex items-center hover:bg-pink-600 ">
+              <div className="hidden md:block">
+                <a href="https://docs.google.com/document/d/17lSwoddQ_Q6ueDXgsw8nHGdzUqIHweuI2v7pf9BrN64/edit?usp=drive_link" target="_blank" rel="noreferrer">
+                  <button className="group bg-orange-600 text-black px-6 py-3 my-2 flex items-center hover:bg-pink-600 " >
                     Résumé
                     <span className="group-hover:rotate-90 duration-300">
                       <HiArrowNarrowRight className="ml-3" />
                     </span>
                   </button>
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -62,8 +62,8 @@ const Navbar = () => {
       </div>
 
       {/* Hamburger */}
-      <div onClick={handleClick} className="md:hidden z-10">
-        {!Nav ? <FaBars className="bg-[#e3e5e9]" /> : <FaTimes />}
+      <div onClick={handleClick} className="md:hidden block z-10">
+        {!Nav ? <FaBars className="bg-[#e3e5e9]" /> : <FaTimes className="bg-[#e3e5e9]" />}
       </div>
       {/* Mobile Menu */}
       <ul
