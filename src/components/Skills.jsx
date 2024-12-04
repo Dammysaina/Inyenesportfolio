@@ -13,51 +13,95 @@ import Nextjs from "../assets/images/nextjs.png"
 
 const Skills = () => {
   return (
-    <div name="skills" className="bg-[#000000] text-gray-300 w-full h-screen">
+    <div name="skills" className="bg-[#000000] text-gray-300 w-full  ">
       {/* Container*/}
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full mt-[-50px]">
+      <div className=" mx-auto flex flex-col w-full h-full ">
         <div>
-          <p className=" font-bold inline border-b-4 border-pink-600 text-4xl">
-            Skills
+          <p className=" font-bold inline  text-xl">
+            Technologies
           </p>
-          <p className="py-4 ">These are the technologies i've worked with</p>
         </div>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={HTML} alt="HTML icon" />
-            <p className="my-4">HTML</p>
+        <div className="flex gap-4 flex-wrap text-center">
+          <div className=" flex gap-1 items-center">
+            <img className="w-4 " src={HTML} alt="HTML icon" />
+            <p className="text-zinc-500 lg:text-xs sm:text-base">HTML</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={CSS} alt="HTML icon" />
-            <p className="my-4">CSS</p>
+          <div className="flex gap-1 items-center">
+            <img className="w-4 mx-auto" src={CSS} alt="HTML icon" />
+            <p className="my-4 text-zinc-500 lg:text-xs sm:text-base">CSS</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={JavaScript} alt="HTML icon" />
-            <p className="my-4">JAVASCRIPT</p>
+          <div className="flex gap-1 items-center">
+            <img className="w-4 mx-auto" src={JavaScript} alt="HTML icon" />
+            <p className="my-4 text-zinc-500 lg:text-xs sm:text-base">JAVASCRIPT</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={ReactImg} alt="HTML icon" />
-            <p className="my-4">REACT</p>
+          <div className="flex gap-1 items-center">
+            <img className="w-4 mx-auto" src={ReactImg} alt="HTML icon" />
+            <p className="my-4 text-zinc-500 lg:text-xs sm:text-base">REACT</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={Nextjs} alt="HTML icon" />
-            <p className="my-4">NEXT</p>
+          <div className="flex gap-1 items-center">
+            <img className="w-4 mx-auto" src={Nextjs} alt="HTML icon" />
+            <p className="my-4 text-zinc-500 lg:text-xs sm:text-base">NEXT</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={GitHub} alt="HTML icon" />
-            <p className="my-4">GITHUB</p>
+          <div className="flex gap-1 items-center">
+            <img className="w-4 mx-auto" src={GitHub} alt="HTML icon" />
+            <p className="my-4 text-zinc-500 lg:text-xs sm:text-base">GITHUB</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={FireBase} alt="HTML icon" />
-            <p className="my-4">FIREBASE</p>
+          <div className="flex gap-1 items-center">
+            <img className="w-4 mx-auto" src={FireBase} alt="HTML icon" />
+            <p className="my-4 text-zinc-500 lg:text-xs sm:text-base">FIREBASE</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={Tailwind} alt="HTML icon" />
-            <p className="my-4">TAILWIND</p>
+          <div className="flex gap-1 items-center">
+            <img className="w-4 mx-auto" src={Tailwind} alt="HTML icon" />
+            <p className="my-4 text-zinc-500 lg:text-xs sm:text-base">TAILWIND</p>
           </div>
 
         </div>
+        
+      </div>
+      <div className=" mx-auto flex flex-col w-full h-full ">
+        <div>
+          <p className=" font-bold inline  text-xl">
+            Tools
+          </p>
+        </div>
+
+        <div className="flex gap-4 flex-wrap text-center">
+          <div className=" flex gap-1 items-center">
+            <img className="w-4 " src={HTML} alt="HTML icon" />
+            <p className="text-zinc-500 lg:text-xs sm:text-base">HTML</p>
+          </div>
+          <div className="flex gap-1 items-center">
+            <img className="w-4 mx-auto" src={CSS} alt="HTML icon" />
+            <p className="my-4 text-zinc-500 lg:text-xs sm:text-base">CSS</p>
+          </div>
+          <div className="flex gap-1 items-center">
+            <img className="w-4 mx-auto" src={JavaScript} alt="HTML icon" />
+            <p className="my-4 text-zinc-500 lg:text-xs sm:text-base">JAVASCRIPT</p>
+          </div>
+          <div className="flex gap-1 items-center">
+            <img className="w-4 mx-auto" src={ReactImg} alt="HTML icon" />
+            <p className="my-4 text-zinc-500 lg:text-xs sm:text-base">REACT</p>
+          </div>
+          <div className="flex gap-1 items-center">
+            <img className="w-4 mx-auto" src={Nextjs} alt="HTML icon" />
+            <p className="my-4 text-zinc-500 lg:text-xs sm:text-base">NEXT</p>
+          </div>
+          <div className="flex gap-1 items-center">
+            <img className="w-4 mx-auto" src={GitHub} alt="HTML icon" />
+            <p className="my-4 text-zinc-500 lg:text-xs sm:text-base">GITHUB</p>
+          </div>
+          <div className="flex gap-1 items-center">
+            <img className="w-4 mx-auto" src={FireBase} alt="HTML icon" />
+            <p className="my-4 text-zinc-500 lg:text-xs sm:text-base">FIREBASE</p>
+          </div>
+          <div className="flex gap-1 items-center">
+            <img className="w-4 mx-auto" src={Tailwind} alt="HTML icon" />
+            <p className="my-4 text-zinc-500 lg:text-xs sm:text-base">TAILWIND</p>
+          </div>
+
+        </div>
+        
       </div>
     </div>
   );

@@ -3,9 +3,9 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div name="home" className=" w-full h-screen bg-[#000000] md:min-h-[60vh] pt-40" >
+    <div name="home" className=" w-full  bg-[#000000] md:min-h-[60vh] pt-40" >
       {/*Container*/}
-      <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center items-center h-full">
+      <div className="max-w-[1000px] mx-auto px-8 flex flex-col items-center ">
         <h1 className="text-4xl sm:text-7xl font-bold text-[#ffffff]">
           Inyene Etoedia
         </h1>
