@@ -51,7 +51,7 @@ const Navbar = () => {
               </ul>
               <div className="hidden md:block">
                 <a href="https://docs.google.com/document/d/17lSwoddQ_Q6ueDXgsw8nHGdzUqIHweuI2v7pf9BrN64/edit?usp=drive_link" target="_blank" rel="noreferrer">
-                  <button className="group bg-orange-600 text-black px-6 py-3 my-2 flex items-center hover:bg-pink-600 " >
+                  <button className="group bg-orange-600 text-black px-6 py-3 my-2 flex items-center hover:bg-zinc-500" >
                     Résumé
                     <span className="group-hover:rotate-90 duration-300">
                       <HiArrowNarrowRight className="ml-3" />
