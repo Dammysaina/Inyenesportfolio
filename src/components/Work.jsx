@@ -13,7 +13,7 @@ const Work = () => {
         <div className="pb-8">
           <p className="text-4xl font-bold inline text-gray-300 text-zinc-90 relative sm:text-4xl mt-3 whitespace-nowrap z-10">
             Projects
-            <span className="absolute text-4xl sm:text-5xl font-bold left-0 -top-4 sm:-top-6 bg-clip-text text-transparent bg-gradient-to-b from-zinc-800 -z-10 md:left-1/2 md:-translate-x-1/2">
+            <span className="absolute text-4xl sm:text-5xl font-bold left-0 -top-4 sm:-top-6 bg-clip-text text-transparent bg-gradient-to-b from-zinc-800 -z-10 md:left-[65%] md:-translate-x-1/2">
               {" "}
               projects
             </span>

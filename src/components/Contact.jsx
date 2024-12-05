@@ -15,8 +15,9 @@ const Contact = () => {
             </span>
         </p>
         
-        <p className="text-gray-300 pt-4 flex items-center">
-          Shoot me an email - etoedia@gmail.com
+        <p className="text-gray-300 pt-4 flex items-center" >
+          Shoot me an email - <a href="mailto:etoedia@gmail.com" >etoedia@gmail.com</a>
+          
         </p>
       </div>
     </section>

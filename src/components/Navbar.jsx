@@ -10,6 +10,7 @@ import {
 import Logo from "../assets/images/dalogo.png";
 import { Link } from "react-scroll";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import User from "../assets/images/user.png"
 
 const Navbar = () => {
   const [Nav, setNav] = useState(false);
@@ -30,8 +31,10 @@ const Navbar = () => {
             {/* menu*/}
             <div className="flex items-center gap-4">
               <ul className="hidden md:flex">
-                <li>
-                  <Link to="about" smooth={true} duration={500}>
+                <li >
+                  <Link to="about" smooth={true} duration={500} className="flex items-center gap-4">
+                  <img src={User} className="w-6"
+                    alt="usericon"/>
                     About
                   </Link>{" "}
                 </li>
