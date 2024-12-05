@@ -14,7 +14,7 @@
 @layer base {
   body {
     @apply font-rubik;
-
+    @apply bg-black;
   }
   li {
     @apply px-4;

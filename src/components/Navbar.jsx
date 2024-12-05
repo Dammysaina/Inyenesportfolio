@@ -16,7 +16,7 @@ const Navbar = () => {
   const [Nav, setNav] = useState(false);
   const handleClick = () => setNav(!Nav);
   return (
-    <div className="fixed w-full bg-[#000000] text-gray-300 animate-fade-in transition-all duration-300 z-50 ">
+    <div className="fixed w-full  text-gray-300 animate-fade-in transition-all duration-300 z-50 ">
       <div className=" bg-black relative top-[20px] px-5">
         {/* <div> */}
           <div className="flex items-center justify-between h-16 border border-[#1a1a1a] px-5">
