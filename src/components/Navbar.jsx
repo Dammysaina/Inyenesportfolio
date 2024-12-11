@@ -67,8 +67,8 @@ const Navbar = () => {
       </div>
 
       {/* Hamburger */}
-      <div onClick={handleClick} className="md:hidden z-10 block  cursor-pointer">
-        {!Nav ? <FaBars className="bg-[#c61e1e]" /> : <FaTimes className="bg-[#e3e5e9]" />}
+      <div onClick={handleClick} className="md:hidden z-10 block  cursor-pointer relative -top-4 left-[22rem]">
+        {!Nav ? <FaBars className="" /> : <FaTimes className="bg-[#e3e5e9]" />}
       </div>
       {/* Mobile Menu */}
       <ul
