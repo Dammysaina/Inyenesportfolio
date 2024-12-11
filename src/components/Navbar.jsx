@@ -14,10 +14,12 @@ import User from "../assets/images/user.png"
 
 const Navbar = () => {
   const [Nav, setNav] = useState(false);
-  const handleClick = () => setNav(!Nav);
+  const handleClick = () => {
+    setNav(!Nav);
+  } 
   return (
-    <div className="fixed w-full  text-gray-300 animate-fade-in transition-all duration-300 z-50 ">
-      <div className=" bg-black relative top-[20px] px-5">
+    <div className="fixed w-full  text-gray-300 animate-fade-in transition-all duration-300  z-[99999]">
+      <div className="  relative top-[20px] px-5">
         {/* <div> */}
           <div className="flex items-center justify-between h-16 border border-[#1a1a1a] px-5">
             <Link to="home" smooth={true} duration={500}>
@@ -65,15 +67,15 @@ const Navbar = () => {
       </div>
 
       {/* Hamburger */}
-      <div onClick={handleClick} className="md:hidden block z-10">
-        {!Nav ? <FaBars className="bg-[#e3e5e9]" /> : <FaTimes className="bg-[#e3e5e9]" />}
+      <div onClick={handleClick} className="md:hidden z-10 block  cursor-pointer">
+        {!Nav ? <FaBars className="bg-[#c61e1e]" /> : <FaTimes className="bg-[#e3e5e9]" />}
       </div>
       {/* Mobile Menu */}
       <ul
-        className={
-          !Nav
-            ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#000000] flex flex-col justify-center items-center"
+        className={ `${!Nav
+          ? "hidden"
+          : "absolute"}
+           top-16 left-10 w-full h-screen bg-[black] flex flex-col justify-center items-center`
         }
       >
         <li className="py-6 text-4xl">
