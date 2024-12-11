@@ -18,10 +18,10 @@ const Navbar = () => {
     setNav(!Nav);
   } 
   return (
-    <div className="fixed w-full  text-gray-300 animate-fade-in transition-all duration-300  z-[99999]">
+    <div className="w-full  text-gray-300 animate-fadeIn transition-all duration-300 z-50">
       <div className="  relative top-[20px] px-5">
         {/* <div> */}
-          <div className="flex items-center justify-between h-16 border border-[#1a1a1a] px-5">
+          <div className="flex items-center bg-black justify-between h-16 border border-[#1a1a1a] px-5">
             <Link to="home" smooth={true} duration={500}>
               <img
                 src={Logo}
@@ -67,15 +67,15 @@ const Navbar = () => {
       </div>
 
       {/* Hamburger */}
-      <div onClick={handleClick} className="md:hidden z-10 block  cursor-pointer relative -top-4 left-[22rem]">
-        {!Nav ? <FaBars className="" /> : <FaTimes className="bg-[#e3e5e9]" />}
+      <div onClick={handleClick} className="md:hidden z-50 block  cursor-pointer relative -top-4 left-[22rem]">
+        {!Nav ? <FaBars className="w-10" /> : <FaTimes className="bg-[#e3e5e9]" />}
       </div>
       {/* Mobile Menu */}
       <ul
         className={ `${!Nav
           ? "hidden"
           : "absolute"}
-           top-16 left-10 w-full h-screen bg-[black] flex flex-col justify-center items-center`
+           top-16 left-10 w-full h-screen bg-[black] flex flex-col justify-center items-center z-40`
         }
       >
         <li className="py-6 text-4xl">
