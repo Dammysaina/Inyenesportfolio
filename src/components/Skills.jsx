@@ -36,7 +36,7 @@ const Skills = () => {
           </div>
           <div className="flex gap-1 items-center">
             <img className="w-4 mx-auto" src={Swift} alt="HTML icon" />
-            <p className="my-4 text-zinc-500 lg:text-sm sm:text-base">JAVASCRIPT</p>
+            <p className="my-4 text-zinc-500 lg:text-sm sm:text-base">Swift</p>
           </div>
           <div className="flex gap-1 items-center">
             <img className="w-4 mx-auto" src={ReactImg} alt="HTML icon" />
