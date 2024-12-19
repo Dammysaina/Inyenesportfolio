@@ -7,7 +7,7 @@ const About = () => {
       name="about"
       className="w-full  bg-[#000000] text-gray-300 container animate-fade-in px-5"
     >
-      <div className="px-5 py-5 md:p-16 border border-[#1a1a1a] p-5">
+      <div className="px-5 py-5 md:p-16 border border-[#1a1a1a] p-5 mt-20">
         <div className=" flex flex-col md:flex-row justify-between gap-5 md:gap-4 pb-8 mb-8 border-b border-[#1a1a1a] w-full  ">
           <p className="text-3xl font-bold inline text-zinc-90 relative sm:text-4xl mt-3 whitespace-nowrap z-10">
             About Me

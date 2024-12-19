@@ -6,8 +6,11 @@ import {
 } from "react-icons/fa";
 import Logo from "../assets/images/dalogo.png";
 import { Link } from "react-scroll";
-import { HiArrowNarrowRight } from "react-icons/hi";
-import User from "../assets/images/user.png"
+import { TbMailCode } from "react-icons/tb";
+import { IoDocumentAttachOutline } from "react-icons/io5";
+import { GoProjectSymlink } from "react-icons/go";
+import { IoPersonOutline } from "react-icons/io5";
+
 
 const Navbar = () => {
   const [Nav, setNav] = useState(false);
@@ -32,18 +35,19 @@ const Navbar = () => {
               <ul className="hidden md:flex">
                 <li >
                   <Link to="about" smooth={true} duration={500} className="flex items-center gap-4">
-                  <img src={User} className="w-6"
-                    alt="usericon"/>
+                  < IoPersonOutline size={20}/>
                     About
                   </Link>{" "}
                 </li>
                 <li>
-                  <Link to="work" smooth={true} duration={500}>
+                  <Link to="work" smooth={true} duration={500} className="flex items-center gap-4">
+                    <GoProjectSymlink size={20}/>
                     Projects
                   </Link>{" "}
                 </li>
                 <li>
-                  <Link to="contact" smooth={true} duration={500}>
+                  <Link to="contact" smooth={true} duration={500} className="flex items-center gap-5">
+                  <TbMailCode size={20} />
                     Contact
                   </Link>{" "}
                 </li>
@@ -52,8 +56,8 @@ const Navbar = () => {
                 <a href="https://docs.google.com/document/d/17lSwoddQ_Q6ueDXgsw8nHGdzUqIHweuI2v7pf9BrN64/edit?usp=drive_link" target="_blank" rel="noreferrer">
                   <button className="group bg-orange-600 text-black px-6 py-3 my-2 flex items-center hover:bg-zinc-500" >
                     Résumé
-                    <span className="group-hover:rotate-90 duration-300">
-                      <HiArrowNarrowRight className="ml-3" />
+                    <span >
+                      <IoDocumentAttachOutline className="ml-3" />
                     </span>
                   </button>
                 </a>
