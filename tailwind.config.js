@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx}"],
   theme: {
     extend: {
+      colors: {
+        'orange-strong': '#FF4500', // Example color
+      },
       keyframes: {
         title: {
           '0%': { transform: 'scale(1)', opacity: '0' },
