@@ -2,7 +2,7 @@ import React from "react";
 
 import Flutter from "../assets/images/Flutter.svg";
 import Dart from "../assets/images/Dart.svg";
-import JavaScript from "../assets/images/javascript.png";
+import Swift from "../assets/images/Swift.svg";
 import ReactImg from "../assets/images/react.png";
 // import Node from "../assets/images/node.png";
 import FireBase from "../assets/images/firebase.png";
@@ -35,7 +35,7 @@ const Skills = () => {
             <p className="my-4 text-zinc-500 lg:text-sm sm:text-base">Dart</p>
           </div>
           <div className="flex gap-1 items-center">
-            <img className="w-4 mx-auto" src={JavaScript} alt="HTML icon" />
+            <img className="w-4 mx-auto" src={Swift} alt="HTML icon" />
             <p className="my-4 text-zinc-500 lg:text-sm sm:text-base">JAVASCRIPT</p>
           </div>
           <div className="flex gap-1 items-center">
