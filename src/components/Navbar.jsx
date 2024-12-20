@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   FaBars,
-  FaTimes,
- 
-} from "react-icons/fa";
+  FaTimes } from "react-icons/fa";
 import Logo from "../assets/images/dalogo.png";
 import { Link } from "react-scroll";
 import { TbMailCode } from "react-icons/tb";
@@ -14,9 +12,29 @@ import { IoPersonOutline } from "react-icons/io5";
 
 const Navbar = () => {
   const [Nav, setNav] = useState(false);
-  const handleClick = () => {
+  const [activeSection, setActiveSection] = useState("");
+
+  const handleClick = () => 
     setNav(!Nav);
-  } 
+  
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.6 } // 60% of the section should be visible
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="w-full  text-gray-300 animate-fadeIn transition-all duration-300 z-50">
       <div className="  relative top-[20px] px-5">
@@ -33,7 +51,9 @@ const Navbar = () => {
             {/* menu*/}
             <div className="flex items-center gap-4">
               <ul className="hidden md:flex">
-                <li >
+                <li className={`${
+                  activeSection === "about" ? "text-orange-500" : ""
+                }`} >
                   <Link to="about" smooth={true} duration={500} className="flex items-center gap-4">
                   < IoPersonOutline size={20}/>
                     About

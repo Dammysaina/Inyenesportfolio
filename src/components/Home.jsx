@@ -24,28 +24,31 @@ const Home = () => {
 
         <div className="flex gap-5 my-5 md:mt-8 justify-center items-center w-full text-gray-300">
           <a
-            className="  text-zinc-400 transition duration-300 hover:text-orange-strong "
+            className="  text-zinc-400 transition duration-300 hover:text-orange-strong animation-pop"
             href="https://github.com/DevSynthx"
             target="_blank"
             rel="noreferrer"
+            style={{ animationDelay: '0.3s' }}
           >
             {" "}
             <FiGithub size={25} />{" "}
           </a>
           <a
-            className=" text-zinc-400 transition duration-300 hover:text-orange-strong"
+            className=" text-zinc-400 transition duration-300 hover:text-orange-strong animation-pop"
             href="https://www.linkedin.com/in/inyene-etoedia/"
             target="_blank"
             rel="noreferrer"
+            style={{ animationDelay: '0.6s' }}
           >
             {" "}
             <SlSocialLinkedin size={25} />
           </a>
           <a
-            className=" text-zinc-400 transition duration-300 hover:text-orange-strong"
+            className=" text-zinc-400 transition duration-300 hover:text-orange-strong animation-pop"
             href="https://x.com/Etoedia"
             target="_blank"
             rel="noreferrer"
+            style={{ animationDelay: '0.9s' }}
           >
             {" "}
             <RiTwitterXLine size={25} />
